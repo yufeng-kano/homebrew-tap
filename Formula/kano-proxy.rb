@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "4.5.0"
+  version "4.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.0/kano-proxy-4.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "4e45bb57793324641c502aaf5205e48f92eadf561163b23458c5e3370733dca5"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.2/kano-proxy-4.5.2-aarch64-apple-darwin.tar.gz"
+      sha256 "b73fc90cad103db5195af61a12c89f886b4b56a92bd0fb58b35b20aaf7c56fb4"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.0/kano-proxy-4.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "ed10a4a9cdc34517dd0a7f24bc4039c1e78207c07bab89a586334843357d8404"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.2/kano-proxy-4.5.2-x86_64-apple-darwin.tar.gz"
+      sha256 "b9911fda333ac62aa3532b74d4835186039208e5b012336ee953d46e163b0a0c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.0/kano-proxy-4.5.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "3b83ae401adc21cc69df15b2886a24de74c3c1233d56c9c54e4cfa6543cdb57f"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.2/kano-proxy-4.5.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "1a09cf4261db8cd7c5b61b79a62755405714507bb4e8076f2d94d9ca4b33c17b"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.0/kano-proxy-4.5.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "5efc446e9dd3f9bd6de6edf1bee1375992366ed385cd6fcc40db952f9e55b75d"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.2/kano-proxy-4.5.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "7c2f1d0d31d5b7040139ca56974c948ed618e38fddefd4ae61eb05617814dd8b"
     end
   end
 

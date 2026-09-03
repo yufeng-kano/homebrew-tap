@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "4.5.2"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.2/kano-proxy-4.5.2-aarch64-apple-darwin.tar.gz"
-      sha256 "b73fc90cad103db5195af61a12c89f886b4b56a92bd0fb58b35b20aaf7c56fb4"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.0.0/kano-proxy-1.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "3e4b7ff4bc7ae2c5bfab79e9a77a85b207409cad7af51d3812858abd9bb0a761"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.2/kano-proxy-4.5.2-x86_64-apple-darwin.tar.gz"
-      sha256 "b9911fda333ac62aa3532b74d4835186039208e5b012336ee953d46e163b0a0c"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.0.0/kano-proxy-1.0.0-x86_64-apple-darwin.tar.gz"
+      sha256 "13baa6a6596353af377f726f40265ea89aa7b24d95b3bd720f9b58099644a0d7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.2/kano-proxy-4.5.2-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "1a09cf4261db8cd7c5b61b79a62755405714507bb4e8076f2d94d9ca4b33c17b"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.0.0/kano-proxy-1.0.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "38130e60bfc346bacdfed047818dd635ff8b9d609d3d467d1f335d5efc9973eb"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/v4.5.2/kano-proxy-4.5.2-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "7c2f1d0d31d5b7040139ca56974c948ed618e38fddefd4ae61eb05617814dd8b"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.0.0/kano-proxy-1.0.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "3f5049549c8011a5677102a2ccc4de587fd7e4ae5ade8785fd8d77c31ee72c9e"
     end
   end
 

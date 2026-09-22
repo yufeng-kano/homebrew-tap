@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.0.0/kano-proxy-1.0.0-aarch64-apple-darwin.tar.gz"
-      sha256 "3e4b7ff4bc7ae2c5bfab79e9a77a85b207409cad7af51d3812858abd9bb0a761"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.1.0/kano-proxy-1.1.0-aarch64-apple-darwin.tar.gz"
+      sha256 "7b3d4f68224687bac3da8fcb65bb46e6a0d62d3e0242afd496ce8379c9a8674a"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.0.0/kano-proxy-1.0.0-x86_64-apple-darwin.tar.gz"
-      sha256 "13baa6a6596353af377f726f40265ea89aa7b24d95b3bd720f9b58099644a0d7"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.1.0/kano-proxy-1.1.0-x86_64-apple-darwin.tar.gz"
+      sha256 "98357460a17cbb1f4fb0fa8724338d80da9e9a8718fc850aa909c910ce4515f2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.0.0/kano-proxy-1.0.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "38130e60bfc346bacdfed047818dd635ff8b9d609d3d467d1f335d5efc9973eb"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.1.0/kano-proxy-1.1.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "ecef6d4fc185efb46d4d097b4611a753071de0cdb46db7e40b3b0fdaaaa8ada3"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.0.0/kano-proxy-1.0.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "3f5049549c8011a5677102a2ccc4de587fd7e4ae5ade8785fd8d77c31ee72c9e"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.1.0/kano-proxy-1.1.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "d5eb7c3659bc4df0776abcd4dd9b23cbc3b9d34b32444906b7357830226046ba"
     end
   end
 

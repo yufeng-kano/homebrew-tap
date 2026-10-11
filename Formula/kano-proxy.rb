@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "2.0.0"
+  version "2.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.0.0/kano-proxy-2.0.0-aarch64-apple-darwin.tar.gz"
-      sha256 "ae4b6e587ea40d33d026a291287cf32e964c6708f47a9481c1f6d4ca46622b89"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.1.0/kano-proxy-2.1.0-aarch64-apple-darwin.tar.gz"
+      sha256 "9a309207bee9a1ac5a59d1dd876914d193f968f034cbedea899b1cb2ab052261"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.0.0/kano-proxy-2.0.0-x86_64-apple-darwin.tar.gz"
-      sha256 "b204fd3c2c1b5841f73600e0e12896a76bf09d137c52ba914b1ac733c9b73956"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.1.0/kano-proxy-2.1.0-x86_64-apple-darwin.tar.gz"
+      sha256 "7986bbf7cf96e5fa7020346393d91d9dff86084b901fc58878612a0362b8a4a0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.0.0/kano-proxy-2.0.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "bacd553c418ff1b954fda569145009a69147d5f27d984215bb58868a49d95fce"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.1.0/kano-proxy-2.1.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "06761e788a568ef9b5a519572d1c54c83259086937e4210af2c7b260c6f04698"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.0.0/kano-proxy-2.0.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "273158ba347783f2309c7296f6eb1cfcef004949067983f316d0911e65e17caf"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.1.0/kano-proxy-2.1.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "32d2a738caea3fa3fd8cbfa31caf84e28faebc0e4bc39501c2852051a2d6b4a7"
     end
   end
 

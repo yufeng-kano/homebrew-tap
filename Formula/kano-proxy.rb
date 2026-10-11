@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "2.1.0"
+  version "2.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.1.0/kano-proxy-2.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "9a309207bee9a1ac5a59d1dd876914d193f968f034cbedea899b1cb2ab052261"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.2.0/kano-proxy-2.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "b7855f756f4b3fdd5165c226a86c741949acb69d9313796b7a14a03cb42ae86d"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.1.0/kano-proxy-2.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "7986bbf7cf96e5fa7020346393d91d9dff86084b901fc58878612a0362b8a4a0"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.2.0/kano-proxy-2.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "e353585d5d9faaf94ae8f0bafb140aac52e25c86354aa7521149cc86c0a013ad"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.1.0/kano-proxy-2.1.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "06761e788a568ef9b5a519572d1c54c83259086937e4210af2c7b260c6f04698"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.2.0/kano-proxy-2.2.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "9886316017bee564e7dad050da3c43125bdf202c10a6929ec38d6ffce591c53d"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.1.0/kano-proxy-2.1.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "32d2a738caea3fa3fd8cbfa31caf84e28faebc0e4bc39501c2852051a2d6b4a7"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.2.0/kano-proxy-2.2.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "930f487651cc6e17cbd0bb4054513bdc97e784e260af20a2e76fa107738ba5ea"
     end
   end
 

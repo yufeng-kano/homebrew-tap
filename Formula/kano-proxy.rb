@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "2.3.0"
+  version "2.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.3.0/kano-proxy-2.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "629b6c280796a56df5e1246556211fd041dd854c32641d69abd4abf9160d97dd"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.4.0/kano-proxy-2.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "f1adb9a55d19a25ceeea224c0f90a7a78dd2d007111b412d4bf447e7e3f86629"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.3.0/kano-proxy-2.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "8723e9f3d9300d89ef83a86b9bebace0cb8dc5ae4d15505221983f4774b85dfd"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.4.0/kano-proxy-2.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "21cf2b2f147b9e3519aa5b6db0daae98ccfd926f5d7d119dea9a0e16fb871dbb"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.3.0/kano-proxy-2.3.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e31a2fd6365a4d0e70c31f698f968bcf0562df85ca90c3c692b8350c7662f419"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.4.0/kano-proxy-2.4.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "7438b83889fd613aa8628eb2f0041ff3057d058d3ce26f2498891d2e67fbe544"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.3.0/kano-proxy-2.3.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "0130b5b14d35085b678511f73bc18247ce36c7f906ba827a6092cdf1176d1ac3"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.4.0/kano-proxy-2.4.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "b8859efa3155b2da32b8c004203dc46438d54d8a2f312d190ad60294e9147f9f"
     end
   end
 

@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "1.2.0"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.2.0/kano-proxy-1.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "834a5e2467b6705b4c5b3d3800ce3fd285f01377b996ff2fcb1fb8df85d17307"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.0.0/kano-proxy-2.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "ae4b6e587ea40d33d026a291287cf32e964c6708f47a9481c1f6d4ca46622b89"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.2.0/kano-proxy-1.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "cad74b673098e58d5282b1856829890778bd6d4ca9b0fd6079bee48bee5e5c57"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.0.0/kano-proxy-2.0.0-x86_64-apple-darwin.tar.gz"
+      sha256 "b204fd3c2c1b5841f73600e0e12896a76bf09d137c52ba914b1ac733c9b73956"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.2.0/kano-proxy-1.2.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "5e1eaffbbcb92ec2cd5f46f524e36b7e5442c2c24f0d01128b84e018cb492db7"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.0.0/kano-proxy-2.0.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "bacd553c418ff1b954fda569145009a69147d5f27d984215bb58868a49d95fce"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v1.2.0/kano-proxy-1.2.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e29c5f4d1bc0bcec9bab04996f1bf9ef4d78ebf988d00d856ea037317fbdb374"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.0.0/kano-proxy-2.0.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "273158ba347783f2309c7296f6eb1cfcef004949067983f316d0911e65e17caf"
     end
   end
 

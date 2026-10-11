@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "2.2.0"
+  version "2.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.2.0/kano-proxy-2.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "b7855f756f4b3fdd5165c226a86c741949acb69d9313796b7a14a03cb42ae86d"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.3.0/kano-proxy-2.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "629b6c280796a56df5e1246556211fd041dd854c32641d69abd4abf9160d97dd"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.2.0/kano-proxy-2.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "e353585d5d9faaf94ae8f0bafb140aac52e25c86354aa7521149cc86c0a013ad"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.3.0/kano-proxy-2.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "8723e9f3d9300d89ef83a86b9bebace0cb8dc5ae4d15505221983f4774b85dfd"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.2.0/kano-proxy-2.2.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "9886316017bee564e7dad050da3c43125bdf202c10a6929ec38d6ffce591c53d"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.3.0/kano-proxy-2.3.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "e31a2fd6365a4d0e70c31f698f968bcf0562df85ca90c3c692b8350c7662f419"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.2.0/kano-proxy-2.2.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "930f487651cc6e17cbd0bb4054513bdc97e784e260af20a2e76fa107738ba5ea"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.3.0/kano-proxy-2.3.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "0130b5b14d35085b678511f73bc18247ce36c7f906ba827a6092cdf1176d1ac3"
     end
   end
 

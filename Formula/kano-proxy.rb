@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "2.4.0"
+  version "2.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.4.0/kano-proxy-2.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "f1adb9a55d19a25ceeea224c0f90a7a78dd2d007111b412d4bf447e7e3f86629"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.0/kano-proxy-2.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "29835bd294aebbbcc55f1e29a7db900b55eb52552e8cb7c25c41fcfc9a0e092a"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.4.0/kano-proxy-2.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "21cf2b2f147b9e3519aa5b6db0daae98ccfd926f5d7d119dea9a0e16fb871dbb"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.0/kano-proxy-2.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "0b9dc80c06c7e6d815d14c8feedbbe86f4f7ffffc2095322ad2153da082c0f84"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.4.0/kano-proxy-2.4.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "7438b83889fd613aa8628eb2f0041ff3057d058d3ce26f2498891d2e67fbe544"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.0/kano-proxy-2.5.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "e66075eb54d8e42bd0d9d185ba3d3354ca2517188774c1b793aa5c2c3510980b"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.4.0/kano-proxy-2.4.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b8859efa3155b2da32b8c004203dc46438d54d8a2f312d190ad60294e9147f9f"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.0/kano-proxy-2.5.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "1d23672e6eeaedb85a6daeb23cf7c4b67f18fc4f53bf00905b41bc422d55a535"
     end
   end
 

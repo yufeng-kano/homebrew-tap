@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "2.5.1"
+  version "2.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.1/kano-proxy-2.5.1-aarch64-apple-darwin.tar.gz"
-      sha256 "019e1a2297ab7a629c8af443e9b26f389dccdf3be657170925b863737dacb9d5"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.2/kano-proxy-2.5.2-aarch64-apple-darwin.tar.gz"
+      sha256 "3f2486a49eca95d90e8a694646a311b1b832a82cd2429b359537fe87bddd700d"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.1/kano-proxy-2.5.1-x86_64-apple-darwin.tar.gz"
-      sha256 "b7504d617e2150b461b9960b355ae084a0ecf76b5d0a4604f60fd2d35e2bb5b2"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.2/kano-proxy-2.5.2-x86_64-apple-darwin.tar.gz"
+      sha256 "d44ed72a08f496da2c264ce308b7d995fce4dca28a8efbda242fda624916f2f2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.1/kano-proxy-2.5.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "1a6ea26cf51306ac74babb5e1381b12761b513d938b3577d6e70ed71021447a9"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.2/kano-proxy-2.5.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "1b27b922f3e9e64e2127a135334ac18b29efb7f2405eea97c7704d16c8379e4e"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.1/kano-proxy-2.5.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "d9109631ea8d801d6c64a068eff6182fae041a80c94d037a7e4e600c92bad75a"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.2/kano-proxy-2.5.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "3b2dd4eb19efa87a37a062a88b11a478570eb1e041f05dd567f9832161789ea0"
     end
   end
 

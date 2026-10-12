@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "2.5.0"
+  version "2.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.0/kano-proxy-2.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "29835bd294aebbbcc55f1e29a7db900b55eb52552e8cb7c25c41fcfc9a0e092a"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.1/kano-proxy-2.5.1-aarch64-apple-darwin.tar.gz"
+      sha256 "019e1a2297ab7a629c8af443e9b26f389dccdf3be657170925b863737dacb9d5"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.0/kano-proxy-2.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "0b9dc80c06c7e6d815d14c8feedbbe86f4f7ffffc2095322ad2153da082c0f84"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.1/kano-proxy-2.5.1-x86_64-apple-darwin.tar.gz"
+      sha256 "b7504d617e2150b461b9960b355ae084a0ecf76b5d0a4604f60fd2d35e2bb5b2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.0/kano-proxy-2.5.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e66075eb54d8e42bd0d9d185ba3d3354ca2517188774c1b793aa5c2c3510980b"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.1/kano-proxy-2.5.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "1a6ea26cf51306ac74babb5e1381b12761b513d938b3577d6e70ed71021447a9"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.0/kano-proxy-2.5.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "1d23672e6eeaedb85a6daeb23cf7c4b67f18fc4f53bf00905b41bc422d55a535"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.5.1/kano-proxy-2.5.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "d9109631ea8d801d6c64a068eff6182fae041a80c94d037a7e4e600c92bad75a"
     end
   end
 

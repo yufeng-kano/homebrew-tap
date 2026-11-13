@@ -2,26 +2,26 @@
 class KanoProxy < Formula
   desc "Official kano-proxy CLI: expose local LLM servers as providers"
   homepage "https://github.com/yufeng-kano/kano-proxy"
-  version "2.6.0"
+  version "2.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.6.0/kano-proxy-2.6.0-aarch64-apple-darwin.tar.gz"
-      sha256 "128bee9f7894b7c5604ceb6f0021a27137409e73d1724aca762ed67acfcd7285"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.6.1/kano-proxy-2.6.1-aarch64-apple-darwin.tar.gz"
+      sha256 "5fa3d6671f5cfb894c0a229a037b0e67f4cd215e4279df4d0d91189a33d4a1f0"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.6.0/kano-proxy-2.6.0-x86_64-apple-darwin.tar.gz"
-      sha256 "3e6eda1eebe0a0a7b985ca72d4cfbedec146766667b6f6a568ed6dc7615ad0d1"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.6.1/kano-proxy-2.6.1-x86_64-apple-darwin.tar.gz"
+      sha256 "78ea957831f622c714d16435bcf85a47ccf838eaa7210f3795ed9c97bb02adf4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.6.0/kano-proxy-2.6.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "313d40c930b32d09e5ef4162c43b8f29618442fa5815b269b4cd50eb28288c42"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.6.1/kano-proxy-2.6.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "51ca54b138f7356968a28a3f454c39fe046bec0a4bf7194402c192e17f6315bc"
     else
-      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.6.0/kano-proxy-2.6.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e726eb5da73198448465b2af4e78131bcb17730e791daf2cddf720b8ca062ed0"
+      url "https://github.com/yufeng-kano/kano-proxy/releases/download/cli-v2.6.1/kano-proxy-2.6.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "591ea97394203917c0edb471f0fd1471c01704b4bdd26fc7bd4dc63f4f9eaa60"
     end
   end
 
